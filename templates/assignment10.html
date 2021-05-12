@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<title>Assignment 10</title>
+<h1>Jose's Assignment 10</h1>
+<script>
+ //actions = "assignment10.html" 
+function verifier()
+{
+    forms = document.getElementsByClassName("form")
+    if (forms[0].value == "" || forms[1].value == "")
+    {
+        document.getElementById("error").removeAttribute("hidden");
+        return false
+    }
+    else
+    {
+        return true
+    }
+        
+}
+
+
+</script>
+
+
+<body>
+
+
+<p>Please fill out the form below to begin a super fun game</p>
+
+
+</body>
+
+
+    <form method = "GET" onsubmit="return verifier()" action = "/assignment10.html" >
+    Enter your first name:
+    <input type = "text" name = "fname" id = "fname" value = "" class = "form">  <br>
+    Enter your last name:
+    <input type = "text" name = "lname" id = "lname" value = "" class ="form">  <br>
+    <input type = "submit" value ="submit">
+        
+    </form>
+    <div hidden id ="error">
+
+    <p>Form submission invalid. All entires in the form must be filled</p>
+
+
+    </div>
+
+
+
+</html>

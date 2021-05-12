@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<title>Assignment 10</title>
+<script>
+ //actions = "assignment10.html" 
+function verifier()
+{
+
+    return true
+}
+
+
+</script>
+
+
+<body>
+<p>Your previous guess of {{guess}} was incorrect. Please try again</p>
+
+<form onsubmit="verifier()" method = "POST" action = "assignment10.html">
+<input type = "text" name = "guess" value=""> <br>
+<input type = "submit" value = "Guess">
+<input type = "hidden" name = "ran" value = "{{ran}}">
+
+
+</form>
+
+
+</form>
+
+
+</body>
+
+
+
+</html>
